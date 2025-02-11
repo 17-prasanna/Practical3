@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Styling Example</title>
+
+    <!-- Linking External CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Internal CSS -->
+    <style>
+        body {
+            background-color: lightgray;
+            font-family: Arial, sans-serif;
+        }
+        .internal-style {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Demonstrating Inline, Internal, and External CSS</h1>
+
+
+    <p style="color: purple; font-size: 20px;">This is a paragraph with inline CSS.<br>
+     Inline CSS is applied directly to an HTML element using the style attribute. It allows developers to define styles for a specific element without using external or internal stylesheets. This method is useful for quick styling or when only minor changes are required. However, it is not recommended for large-scale projects as it can make the HTML code cluttered and difficult to maintain.</p>
+
+    <p class="internal-style">This paragraph is styled using internal CSS.<br>Internal CSS is defined within a style tag inside the head section of an HTML document. It allows for styling multiple elements within the same page without the need for an external stylesheet. This method is beneficial when working on a single HTML page that does not require reusable styles. However, if multiple pages need the same styles, it is better to use external CSS to maintain consistency and reduce redundancy.</p>
+
+    <p>This paragraph is styled using external CSS.<br>External CSS is written in a separate .css file and linked to an HTML document using the link tag. This method is the most efficient and scalable way to apply styles, as it allows for reusability and keeps the HTML code clean. External CSS is widely used in web development for maintaining a consistent design across multiple pages. By modifying a single CSS file, developers can update the styling of an entire website.</p>
+
+</body>
+</html>
